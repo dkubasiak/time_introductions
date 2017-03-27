@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'time/now' => 'timeshow#now'
+  get 'introduce/:name1/and/:name2' => 'introduce#people'
 end
