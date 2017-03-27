@@ -1,0 +1,5 @@
+<% if params[:name1].present? && params[:name2].present? %>
+   Hello <%= params[:name1].capitalize %>, have you met <%= params[:name2].capitalize %>?  <%= params[:name2].capitalize %>, this is <%= params[:name1].capitalize %>. 
+<% else %>
+   You seem to have neglected to pass required info.
+ <% end %>
